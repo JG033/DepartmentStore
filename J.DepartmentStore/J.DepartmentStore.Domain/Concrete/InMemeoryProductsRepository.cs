@@ -13,7 +13,7 @@ namespace J.DepartmentStore.Domain.Concrete
         private List<Product> _products = new List<Product>
         {
             new Product {Name = "Glasses", Price = 99},
-            new Product {Name = "Watches", Price = 199},
+            new Product {Name = "Watch", Price = 199},
             new Product {Name = "Handbag", Price = 299},
             new Product {Name = "Furniture", Price = 599},
             new Product {Name = "Clothes", Price = 59}
