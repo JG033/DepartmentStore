@@ -12,9 +12,8 @@ namespace J.DepartmentStore.WebApp.Controllers
     public class ProductController : Controller
     {
         public IProductsRepository ProductsRepository { get; set; }
-        = new InMemeoryProductsRepository();
-        // GET: Product
 
+        
         public ViewResult List()
         {
             var model = ProductsRepository.Products;
