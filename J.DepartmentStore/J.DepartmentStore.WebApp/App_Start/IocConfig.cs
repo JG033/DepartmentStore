@@ -16,7 +16,7 @@ namespace J.DepartmentStore.WebApp
         {
             var builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly).PropertiesAutowired();
-            builder.RegisterInstance<IProductsRepository>(new InMemeoryProductsRepository()).PropertiesAutowired();
+            builder.RegisterInstance<IProductsRepository>(new EFProductsRepository()).PropertiesAutowired();
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
